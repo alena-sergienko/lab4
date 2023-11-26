@@ -1,13 +1,11 @@
 name: Run Unit Tests
 on:
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  unit-tests:
+  unit_tests:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
